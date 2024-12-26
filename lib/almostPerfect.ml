@@ -18,6 +18,9 @@ let log2 x =
 (* TODO: Antal says this can be more efficient
          (but didn't implement a more efficient version) *)
 let reverse_bits =
+  (* - [r] is the accumulator that builds up the reversed bits (the result) 
+     - [n] is the no. of bits to process
+     - [x] is the input number whose bits we want to reverse *)
   let rec go r n x =
     match n with
     | 0 -> r
